@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenskart.com™ - Buy Eyeglasses, Sunglasses, Contact Lenses Online</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- ================= GLOBAL PURE CSS TOGGLES ================= -->
+  <input type="checkbox" id="auth-modal-toggle" class="css-toggle" hidden>
+  <input type="checkbox" id="cart-drawer-toggle" class="css-toggle" hidden>
+  <input type="checkbox" id="wishlist-drawer-toggle" class="css-toggle" hidden>
+  <input type="checkbox" id="mobile-menu-toggle" class="css-toggle" hidden>
+  <input type="checkbox" id="hometest-modal-toggle" class="css-toggle" hidden>
+
+  <!-- ================= MASTER CATEGORY RADIOS ================= -->
+  <input type="radio" name="master-cat" id="mcat-all" class="mcat-radio" checked>
+  <input type="radio" name="master-cat" id="mcat-men" class="mcat-radio">
+  <input type="radio" name="master-cat" id="mcat-women" class="mcat-radio">
+  <input type="radio" name="master-cat" id="mcat-kids" class="mcat-radio">
+  <input type="radio" name="master-cat" id="mcat-sun" class="mcat-radio">
+  <input type="radio" name="master-cat" id="mcat-screen" class="mcat-radio">
+  <input type="radio" name="master-cat" id="mcat-contacts" class="mcat-radio">
+
+  <!-- ================= CART ITEM TOGGLES (0 checked by default) ================= -->
+  <input type="checkbox" id="cart-p1" class="cart-item-check">
+  <input type="checkbox" id="cart-p2" class="cart-item-check">
+  <input type="checkbox" id="cart-p3" class="cart-item-check">
+  <input type="checkbox" id="cart-p4" class="cart-item-check">
+  <input type="checkbox" id="cart-p5" class="cart-item-check">
+  <input type="checkbox" id="cart-p6" class="cart-item-check">
+  <input type="checkbox" id="cart-p7" class="cart-item-check">
+  <input type="checkbox" id="cart-p8" class="cart-item-check">
+
+  <!-- ================= WISHLIST ITEM TOGGLES (0 checked by default) ================= -->
+  <input type="checkbox" id="fav-p1" class="fav-item-check">
+  <input type="checkbox" id="fav-p2" class="fav-item-check">
+  <input type="checkbox" id="fav-p3" class="fav-item-check">
+  <input type="checkbox" id="fav-p4" class="fav-item-check">
+  <input type="checkbox" id="fav-p5" class="fav-item-check">
+  <input type="checkbox" id="fav-p6" class="fav-item-check">
+  <input type="checkbox" id="fav-p7" class="fav-item-check">
+  <input type="checkbox" id="fav-p8" class="fav-item-check">
+
+  <!-- ================= QUANTITY STEPPERS ================= -->
+  <input type="radio" name="qty-p1" id="p1-q1" class="qty-radio" checked>
+  <input type="radio" name="qty-p1" id="p1-q2" class="qty-radio">
+  <input type="radio" name="qty-p1" id="p1-q3" class="qty-radio">
+
+  <input type="radio" name="qty-p2" id="p2-q1" class="qty-radio" checked>
+  <input type="radio" name="qty-p2" id="p2-q2" class="qty-radio">
+  <input type="radio" name="qty-p2" id="p2-q3" class="qty-radio">
+
+  <input type="radio" name="qty-p3" id="p3-q1" class="qty-radio" checked>
+  <input type="radio" name="qty-p3" id="p3-q2" class="qty-radio">
+  <input type="radio" name="qty-p3" id="p3-q3" class="qty-radio">
+
+  <input type="radio" name="qty-p4" id="p4-q1" class="qty-radio" checked>
+  <input type="radio" name="qty-p4" id="p4-q2" class="qty-radio">
+  <input type="radio" name="qty-p4" id="p4-q3" class="qty-radio">
+
+  <input type="radio" name="qty-p5" id="p5-q1" class="qty-radio" checked>
+  <input type="radio" name="qty-p5" id="p5-q2" class="qty-radio">
+  <input type="radio" name="qty-p5" id="p5-q3" class="qty-radio">
+
+  <input type="radio" name="qty-p6" id="p6-q1" class="qty-radio" checked>
+  <input type="radio" name="qty-p6" id="p6-q2" class="qty-radio">
+  <input type="radio" name="qty-p6" id="p6-q3" class="qty-radio">
+
+  <input type="radio" name="qty-p7" id="p7-q1" class="qty-radio" checked>
+  <input type="radio" name="qty-p7" id="p7-q2" class="qty-radio">
+  <input type="radio" name="qty-p7" id="p7-q3" class="qty-radio">
+
+  <input type="radio" name="qty-p8" id="p8-q1" class="qty-radio" checked>
+  <input type="radio" name="qty-p8" id="p8-q2" class="qty-radio">
+  <input type="radio" name="qty-p8" id="p8-q3" class="qty-radio">
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+  <div class="top-announcement-bar">
+    <div class="announcement-content">
+      <span class="pulse-dot"></span>
+      <span class="announcement-badge">LIMITED PERIOD OFFER</span>
+      <span class="announcement-text">Buy 1 Get 1 Free on all Eyeglasses &amp; Sunglasses + Free Gold Membership worth ₹600!</span>
+      <label for="auth-modal-toggle" class="announcement-link">CLAIM NOW &rarr;</label>
+    </div>
+  </div>
+
+  <!-- ================= TOP UTILITY BAR ================= -->
+  <div class="top-utility-bar">
+    <div class="container utility-flex">
+      <div class="utility-left">
+        <span class="tagline">Do More, Be More</span>
+        <span class="divider">|</span>
+        <label for="hometest-modal-toggle" class="utility-item clickable">
+          <svg class="util-icon" viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
+          Book Free Home Eye Test @ ₹99
+        </label>
+        <span class="divider">|</span>
+        <a href="#stores" class="utility-item">
+          <svg class="util-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Store Locator (1500+ Stores)
+        </a>
+      </div>
+      <div class="utility-right">
+        <a href="tel:18002024444" class="utility-item phone-link">
+          <svg class="util-icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Toll Free: 1800-202-4444
+        </a>
+        <span class="divider">|</span>
+        <label for="auth-modal-toggle" class="utility-item clickable">Track Order</label>
+        <span class="divider">|</span>
+        <a href="#gold" class="gold-badge-link">
+          <svg class="gold-star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Lenskart Gold
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER ================= -->
+  <header class="main-header">
+    <div class="container header-grid">
+      <!-- Mobile Hamburger Button -->
+      <label for="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Official Logo -->
+      <a href="#" class="lenskart-logo" aria-label="Lenskart Homepage">
+        <img src="images/logo_main.svg" alt="Lenskart Logo" class="official-logo-img" onerror="this.src='images/logo.png'">
+      </a>
+
+      <!-- Search Bar with Live Suggestions Dropdown on Focus -->
+      <div class="search-wrapper">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          <input type="text" placeholder="What are you looking for? (e.g. Vincent Chase, Round, Blue Cut)" class="search-input">
+          <span class="search-badge">TRY 3D</span>
+        </div>
+
+        <!-- CSS-only Live Search Dropdown -->
+        <div class="search-dropdown">
+          <div class="trending-search-title">
+            <svg viewBox="0 0 24 24" class="trend-icon"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+            POPULAR SEARCHES
+          </div>
+          <div class="trend-tags">
+            <a href="#eyeglasses" class="tag-pill">Round Eyeglasses</a>
+            <a href="#brands" class="tag-pill">Vincent Chase Acetate</a>
+            <a href="#category-showcase" class="tag-pill">Computer Glasses Blue Cut</a>
+            <a href="#sunglasses" class="tag-pill">Polarized Wayfarers</a>
+            <a href="#shapes" class="tag-pill">Cat Eye Frames</a>
+            <a href="#brands" class="tag-pill">John Jacobs Luxury</a>
+            <a href="#category-showcase" class="tag-pill">Kids Glasses</a>
+          </div>
+          <div class="search-promo-row">
+            <img src="images/cat_eyeglasses.png" alt="Eyeglasses" class="search-promo-thumb">
+            <div class="search-promo-info">
+              <strong>Need help with your power?</strong>
+              <span>Get our optometrist to test eyes at your home for ₹99</span>
+            </div>
+            <label for="hometest-modal-toggle" class="book-mini-btn clickable">Book Now</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <label for="auth-modal-toggle" class="action-item clickable">
+          <span class="action-title">Track</span>
+          <span class="action-sub">Order</span>
+        </label>
+
+        <label for="auth-modal-toggle" class="action-item auth-btn clickable">
+          <span class="action-title">Sign In &amp;</span>
+          <span class="action-sub">Sign Up</span>
+        </label>
+
+        <label for="wishlist-drawer-toggle" class="action-icon-item wishlist-btn-nav clickable" title="Wishlist">
+          <div class="icon-bubble">
+            <svg class="action-svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span class="count-badge wishlist-count-badge"></span>
+          </div>
+          <span class="action-label">Wishlist</span>
+        </label>
+
+        <label for="cart-drawer-toggle" class="action-icon-item cart-btn clickable" title="Shopping Cart">
+          <div class="icon-bubble">
+            <svg class="action-svg" viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/></svg>
+            <span class="count-badge cart-count-badge"></span>
+          </div>
+          <span class="action-label">Cart</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- ================= PRIMARY NAVIGATION WITH FUNCTIONAL MEGAMENUS ================= -->
+    <nav class="primary-nav">
+      <div class="container nav-container">
+        <ul class="nav-links">
+
+          <!-- EYEGLASSES MEGAMENU -->
+          <li class="nav-item has-dropdown">
+            <a href="#eyeglasses" class="nav-link">
+              EYEGLASSES
+              <span class="nav-badge-pill hot">HOT</span>
+              <svg class="chevron-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="megamenu">
+              <div class="megamenu-grid">
+                <div class="mega-col">
+                  <div class="mega-heading">BUYING FOR</div>
+                  <ul class="mega-list">
+                    <li><a href="#category-showcase"><img src="images/men_eyeglasses.png" class="mega-thumb-mini"> Men Eyeglasses</a></li>
+                    <li><a href="#category-showcase"><img src="images/women_eyeglasses.png" class="mega-thumb-mini"> Women Eyeglasses</a></li>
+                    <li><a href="#category-showcase"><img src="images/kids_eyeglasses.png" class="mega-thumb-mini"> Kids Eyeglasses</a></li>
+                    <li><a href="#eyeglasses">Zero Power (BLU Cut)</a></li>
+                    <li><a href="#eyeglasses">Progressive Lenses</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-heading">BY SHAPE</div>
+                  <ul class="mega-list shapes-list">
+                    <li><a href="#shapes"><img src="images/shape_round.jpg" class="mega-thumb-mini"> Round / Circle</a></li>
+                    <li><a href="#shapes"><img src="images/shape_rectangle.jpg" class="mega-thumb-mini"> Rectangle</a></li>
+                    <li><a href="#shapes"><img src="images/shape_cateye.jpg" class="mega-thumb-mini"> Cat-Eye</a></li>
+                    <li><a href="#shapes"><img src="images/shape_geometric.jpg" class="mega-thumb-mini"> Geometric</a></li>
+                    <li><a href="#shapes"><img src="images/shape_aviator.jpg" class="mega-thumb-mini"> Aviator</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-heading">BY BRAND</div>
+                  <ul class="mega-list">
+                    <li><a href="#brands"><strong>Vincent Chase</strong> <span class="brand-tag popular">Popular</span></a></li>
+                    <li><a href="#brands"><strong>John Jacobs</strong> <span class="brand-tag prem">Luxury</span></a></li>
+                    <li><a href="#brands"><strong>Lenskart Air</strong> <span class="brand-tag light">Light</span></a></li>
+                    <li><a href="#brands"><strong>OWNDAYS</strong></a></li>
+                    <li><a href="#brands"><strong>Hustlr</strong></a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-heading">COLLECTIONS</div>
+                  <ul class="mega-list">
+                    <li><a href="#trending">Masaba x John Jacobs</a></li>
+                    <li><a href="#trending">Hustlr Dark Knight</a></li>
+                    <li><a href="#spider-hero">Lenskart x Spider-Man</a></li>
+                    <li><a href="#story">Devil Wears Prada</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col mega-banner-col">
+                  <div class="mega-promo-card">
+                    <span class="promo-badge-gold">GOLD EXCLUSIVE</span>
+                    <h4>BUY 1 GET 1 FREE</h4>
+                    <p>On all Vincent Chase &amp; Lenskart Air prescription frames</p>
+                    <a href="#gold" class="mega-btn">Explore Gold &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- SUNGLASSES MEGAMENU -->
+          <li class="nav-item has-dropdown">
+            <a href="#sunglasses" class="nav-link">
+              SUNGLASSES
+              <span class="nav-badge-pill trending">TRENDING</span>
+              <svg class="chevron-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="megamenu">
+              <div class="megamenu-grid">
+                <div class="mega-col">
+                  <div class="mega-heading">BUYING FOR</div>
+                  <ul class="mega-list">
+                    <li><a href="#category-showcase"><img src="images/men_sunglasses.png" class="mega-thumb-mini"> Men's Sunglasses</a></li>
+                    <li><a href="#category-showcase"><img src="images/women_sunglasses.png" class="mega-thumb-mini"> Women's Sunglasses</a></li>
+                    <li><a href="#category-showcase"><img src="images/kids_sunglasses.png" class="mega-thumb-mini"> Kids Sunglasses</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-heading">LENS TECH</div>
+                  <ul class="mega-list">
+                    <li><a href="#sunglasses">Polarized Sunglasses</a></li>
+                    <li><a href="#sunglasses">Power Sunglasses (UV+Sight)</a></li>
+                    <li><a href="#sunglasses">Mirrored Sunglasses</a></li>
+                    <li><a href="#sunglasses">100% UV400 Protection</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-heading">TOP BRANDS</div>
+                  <ul class="mega-list">
+                    <li><a href="#brands">Vincent Chase Sun</a></li>
+                    <li><a href="#brands">John Jacobs Sun</a></li>
+                    <li><a href="#brands">OWNDAYS Sun</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col mega-banner-col wide-2">
+                  <img src="images/hero_masaba.jpg" alt="Masaba x JJ" class="mega-promo-img">
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- SCREEN GLASSES -->
+          <li class="nav-item has-dropdown">
+            <a href="#category-showcase" class="nav-link">
+              SCREEN GLASSES
+              <span class="nav-badge-pill blu">BLU</span>
+              <svg class="chevron-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="megamenu">
+              <div class="megamenu-grid">
+                <div class="mega-col">
+                  <div class="mega-heading">BLU LENSES</div>
+                  <ul class="mega-list">
+                    <li><a href="#category-showcase">Zero Power BLU Glasses</a></li>
+                    <li><a href="#category-showcase">Prescription BLU Glasses</a></li>
+                    <li><a href="#category-showcase">Kids Digital Shield</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col mega-banner-col wide-3">
+                  <div class="blu-feature-card">
+                    <div class="blu-pill">98% BLUE LIGHT BLOCK</div>
+                    <h3>Anti-Glare &amp; Screen Shield</h3>
+                    <p>Say goodbye to digital eye strain, headaches, and blurry vision.</p>
+                    <a href="#eyeglasses" class="blu-btn">Shop BLU Glasses</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- CONTACT LENSES -->
+          <li class="nav-item has-dropdown">
+            <a href="#category-showcase" class="nav-link">
+              CONTACT LENSES
+              <svg class="chevron-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="megamenu">
+              <div class="megamenu-grid">
+                <div class="mega-col">
+                  <div class="mega-heading">DISPOSABILITY</div>
+                  <ul class="mega-list">
+                    <li><a href="#category-showcase">Daily Disposable</a></li>
+                    <li><a href="#category-showcase">Monthly Disposable</a></li>
+                    <li><a href="#category-showcase">Color Contact Lenses</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-heading">BRANDS</div>
+                  <ul class="mega-list">
+                    <li><a href="#category-showcase">Acuvue by J&amp;J</a></li>
+                    <li><a href="#category-showcase">Bausch &amp; Lomb</a></li>
+                    <li><a href="#category-showcase">Aquacolor</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- STORES -->
+          <li class="nav-item">
+            <a href="#stores" class="nav-link">
+              STORE LOCATOR
+            </a>
+          </li>
+
+          <!-- HOME EYE TEST -->
+          <li class="nav-item">
+            <label for="hometest-modal-toggle" class="nav-link special-link clickable">
+              <svg class="home-test-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+              TRY @ HOME
+              <span class="live-blink">AT ₹99</span>
+            </label>
+          </li>
+
+        </ul>
+
+        <!-- 3D Try On Link in Nav -->
+        <a href="#try-3d" class="nav-3d-btn">
+          <svg class="d3-icon" viewBox="0 0 24 24"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2zm0 2.2L5.2 7.9 12 11.6l6.8-3.7L12 4.2zM4.8 9.5v7.2l6.2 3.4v-7.2L4.8 9.5zm8.4 10.6l6.2-3.4V9.5l-6.2 3.4v7.2z"/></svg>
+          3D TRY ON
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= MOBILE NAVIGATION DRAWER ================= -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="drawer-logo">
+        <img src="images/logo_main.svg" alt="Lenskart" height="24" onerror="this.src='images/logo.png'">
+      </div>
+      <label for="mobile-menu-toggle" class="drawer-close clickable">&times;</label>
+    </div>
+    <div class="drawer-user-card">
+      <div class="avatar-circle">U</div>
+      <div class="drawer-user-info">
+        <strong>Welcome, Guest</strong>
+        <label for="auth-modal-toggle" class="drawer-login-link clickable">Sign In / Register</label>
+      </div>
+    </div>
+    <ul class="drawer-menu">
+      <li><a href="#eyeglasses">👓 Eyeglasses</a></li>
+      <li><a href="#sunglasses">🕶️ Sunglasses</a></li>
+      <li><a href="#category-showcase">💻 Computer BLU Glasses</a></li>
+      <li><a href="#brands">🏷️ House of Brands</a></li>
+      <li><a href="#shapes">📐 Find Your Shape</a></li>
+      <li><a href="#gold">⭐ Lenskart Gold Membership</a></li>
+      <li><label for="hometest-modal-toggle" class="clickable">🏠 Book Home Eye Test @ ₹99</label></li>
+      <li><a href="#stores">📍 Find Nearby 1500+ Stores</a></li>
+      <li><label for="auth-modal-toggle" class="clickable">📦 Track Your Order</label></li>
+    </ul>
+  </aside>
+
+  <!-- ================= CIRCULAR CATEGORY QUICK STRIP ================= -->
+  <section class="category-strip-section">
+    <div class="container">
+      <div class="category-strip-grid">
+        <a href="#eyeglasses" class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="images/cat_eyeglasses.png" alt="Eyeglasses">
+          </div>
+          <span class="cat-title">Eyeglasses</span>
+          <span class="cat-badge">Buy 1 Get 1</span>
+        </a>
+
+        <a href="#sunglasses" class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="images/cat_sunglasses.png" alt="Sunglasses">
+          </div>
+          <span class="cat-title">Sunglasses</span>
+          <span class="cat-badge">Polarized</span>
+        </a>
+
+        <a href="#category-showcase" class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="images/cat_screenglasses.png" alt="Screen Glasses">
+          </div>
+          <span class="cat-title">Screen Glasses</span>
+          <span class="cat-badge blu-tag">Zero Power</span>
+        </a>
+
+        <a href="#category-showcase" class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="images/cat_contactlenses.png" alt="Contact Lenses">
+          </div>
+          <span class="cat-title">Contact Lenses</span>
+          <span class="cat-badge">From ₹299</span>
+        </a>
+
+        <a href="#eyeglasses" class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="images/cat_progressive.png" alt="Progressive Lenses">
+          </div>
+          <span class="cat-title">Progressive</span>
+          <span class="cat-badge">Bifocal Tech</span>
+        </a>
+
+        <a href="#sunglasses" class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="images/cat_powersun.png" alt="Power Sunglasses">
+          </div>
+          <span class="cat-title">Power Sunglasses</span>
+          <span class="cat-badge">UV + Sight</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HERO BANNER SLIDER (WIDESCREEN 100% WORKING CONTROLS) ================= -->
+  <section class="hero-carousel-section">
+    <div class="container carousel-container">
+      <input type="radio" name="hero-slide" id="slide-1" class="slide-radio" checked>
+      <input type="radio" name="hero-slide" id="slide-2" class="slide-radio">
+      <input type="radio" name="hero-slide" id="slide-3" class="slide-radio">
+      <input type="radio" name="hero-slide" id="slide-4" class="slide-radio">
+      <input type="radio" name="hero-slide" id="slide-5" class="slide-radio">
+
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <img src="images/hero_shunya.jpg" alt="Shunya by Indian Accent Collection" class="slide-full-img">
+          <label for="slide-5" class="slide-arrow prev-arrow clickable" title="Previous Slide">&#10094;</label>
+          <label for="slide-2" class="slide-arrow next-arrow clickable" title="Next Slide">&#10095;</label>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/hero_selfie.png" alt="3D Try-On & Store Exclusive Banner" class="slide-full-img">
+          <label for="slide-1" class="slide-arrow prev-arrow clickable" title="Previous Slide">&#10094;</label>
+          <label for="slide-3" class="slide-arrow next-arrow clickable" title="Next Slide">&#10095;</label>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/hero_meller.png" alt="Meller International Eyewear" class="slide-full-img">
+          <label for="slide-2" class="slide-arrow prev-arrow clickable" title="Previous Slide">&#10094;</label>
+          <label for="slide-4" class="slide-arrow next-arrow clickable" title="Next Slide">&#10095;</label>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/hero_hustlr_switch.png" alt="Hustlr Switch Eyewear" class="slide-full-img">
+          <label for="slide-3" class="slide-arrow prev-arrow clickable" title="Previous Slide">&#10094;</label>
+          <label for="slide-5" class="slide-arrow next-arrow clickable" title="Next Slide">&#10095;</label>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/hero_gold.png" alt="Free Eye Test & Lenskart Gold" class="slide-full-img">
+          <label for="slide-4" class="slide-arrow prev-arrow clickable" title="Previous Slide">&#10094;</label>
+          <label for="slide-1" class="slide-arrow next-arrow clickable" title="Next Slide">&#10095;</label>
+        </div>
+      </div>
+
+      <div class="carousel-nav-dots">
+        <label for="slide-1" class="nav-dot dot-1 clickable" title="Slide 1"></label>
+        <label for="slide-2" class="nav-dot dot-2 clickable" title="Slide 2"></label>
+        <label for="slide-3" class="nav-dot dot-3 clickable" title="Slide 3"></label>
+        <label for="slide-4" class="nav-dot dot-4 clickable" title="Slide 4"></label>
+        <label for="slide-5" class="nav-dot dot-5 clickable" title="Slide 5"></label>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: "WE SEE YOU" CATEGORY SHOWCASE (WIDGET 2 - 100% WORKING SUB-SECTIONS) ================= -->
+  <section class="we-see-you-section" id="category-showcase">
+    <div class="container">
+
+      <!-- PURE CSS RADIO CONTROLLERS FOR CATEGORY TABS -->
+      <input type="radio" name="see-cat-tab" id="cat-tab-eye" class="see-cat-radio" checked>
+      <input type="radio" name="see-cat-tab" id="cat-tab-sun" class="see-cat-radio">
+      <input type="radio" name="see-cat-tab" id="cat-tab-screen" class="see-cat-radio">
+      <input type="radio" name="see-cat-tab" id="cat-tab-contact" class="see-cat-radio">
+
+      <div class="see-header-row">
+        <div class="see-title-col">
+          <span class="section-eyebrow">CATEGORIES</span>
+          <h2 class="see-heading">We <em>See</em> You</h2>
+        </div>
+
+        <!-- Working Sub-section Tabs -->
+        <div class="see-tabs-nav">
+          <label for="cat-tab-eye" class="see-tab-pill clickable">Eyeglasses</label>
+          <label for="cat-tab-sun" class="see-tab-pill clickable">Sunglasses</label>
+          <label for="cat-tab-screen" class="see-tab-pill clickable">Screen Glasses</label>
+          <label for="cat-tab-contact" class="see-tab-pill clickable">Contact Lenses</label>
+        </div>
+      </div>
+
+      <!-- Sub-section Panel 1: Eyeglasses -->
+      <div class="see-panel panel-eyeglasses">
+        <div class="see-main-banner">
+          <div class="see-banner-text">
+            <span class="in-focus-tag">IN FOCUS</span>
+            <h3>Eyeglasses</h3>
+            <p>The frames made for every version of you — the meeting, the wedding, the 11pm walk to the shop.</p>
+            <a href="#eyeglasses" class="see-explore-btn">Explore All Eyeglasses &rarr;</a>
+          </div>
+          <div class="see-banner-visual">
+            <img src="images/cat_eyeglasses.png" alt="Eyeglasses Hero" class="see-focus-img">
+          </div>
+        </div>
+
+        <!-- 3 Interactive Subcategories -->
+        <div class="subcat-row">
+          <a href="#eyeglasses" class="subcat-card">
+            <img src="images/men_eyeglasses.png" alt="Men Eyeglasses" class="subcat-img">
+            <div class="subcat-info">
+              <h4>Men Eyeglasses</h4>
+              <span>1400+ Trending Styles &rarr;</span>
+            </div>
+          </a>
+
+          <a href="#eyeglasses" class="subcat-card">
+            <img src="images/women_eyeglasses.png" alt="Women Eyeglasses" class="subcat-img">
+            <div class="subcat-info">
+              <h4>Women Eyeglasses</h4>
+              <span>1250+ Chic Styles &rarr;</span>
+            </div>
+          </a>
+
+          <a href="#eyeglasses" class="subcat-card">
+            <img src="images/kids_eyeglasses.png" alt="Kids Eyeglasses" class="subcat-img">
+            <div class="subcat-info">
+              <h4>Kids Eyeglasses</h4>
+              <span>Unbreakable Hooper Flex &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sub-section Panel 2: Sunglasses -->
+      <div class="see-panel panel-sunglasses">
+        <div class="see-main-banner sun-banner-theme">
+          <div class="see-banner-text">
+            <span class="in-focus-tag gold-tag">100% POLARIZED</span>
+            <h3>Sunglasses</h3>
+            <p>Sun-soaked days or golden hour drives — find the shade that matches your mood with UV400 lenses.</p>
+            <a href="#sunglasses" class="see-explore-btn gold-btn">Explore All Sunglasses &rarr;</a>
+          </div>
+          <div class="see-banner-visual">
+            <img src="images/cat_sunglasses.png" alt="Sunglasses Hero" class="see-focus-img">
+          </div>
+        </div>
+
+        <!-- Sunglasses Subcategories -->
+        <div class="subcat-row">
+          <a href="#sunglasses" class="subcat-card">
+            <img src="images/men_sunglasses.png" alt="Men Sunglasses" class="subcat-img">
+            <div class="subcat-info">
+              <h4>Men Sunglasses</h4>
+              <span>Polarized Wayfarer &amp; Aviator &rarr;</span>
+            </div>
+          </a>
+
+          <a href="#sunglasses" class="subcat-card">
+            <img src="images/women_sunglasses.png" alt="Women Sunglasses" class="subcat-img">
+            <div class="subcat-info">
+              <h4>Women Sunglasses</h4>
+              <span>Oversized Glam &amp; Cat-Eye &rarr;</span>
+            </div>
+          </a>
+
+          <a href="#sunglasses" class="subcat-card">
+            <img src="images/kids_sunglasses.png" alt="Kids Sunglasses" class="subcat-img">
+            <div class="subcat-info">
+              <h4>Kids Sunglasses</h4>
+              <span>100% UV Protection &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sub-section Panel 3: Screen Glasses -->
+      <div class="see-panel panel-screenglasses">
+        <div class="see-main-banner screen-banner-theme">
+          <div class="see-banner-text">
+            <span class="in-focus-tag blu-tag">BLU COMPUTER LENSES</span>
+            <h3>Zero Power Screen Glasses</h3>
+            <p>Block 98% of harmful blue light emitted from laptops, tablets, and phones. Sleep better and reduce eye fatigue.</p>
+            <a href="#eyeglasses" class="see-explore-btn blu-btn-theme">Explore BLU Collection &rarr;</a>
+          </div>
+          <div class="see-banner-visual">
+            <img src="images/cat_screenglasses.png" alt="Screen Glasses Hero" class="see-focus-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-section Panel 4: Contact Lenses -->
+      <div class="see-panel panel-contactlenses">
+        <div class="see-main-banner contact-banner-theme">
+          <div class="see-banner-text">
+            <span class="in-focus-tag">ALL-DAY COMFORT</span>
+            <h3>Contact Lenses &amp; Solutions</h3>
+            <p>High moisture silicone hydrogel daily, monthly, and colored lenses from Bausch &amp; Lomb, Acuvue, and Aquacolor.</p>
+            <a href="#category-showcase" class="see-explore-btn">Shop Contact Lenses &rarr;</a>
+          </div>
+          <div class="see-banner-visual">
+            <img src="images/cat_contactlenses.png" alt="Contact Lenses Hero" class="see-focus-img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: "WHAT'S TRENDING?" (WIDGET 4) ================= -->
+  <section class="trending-section" id="trending">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <span class="section-subtitle">TRENDSETTER</span>
+        <h2 class="section-heading">What's <em>Trending?</em></h2>
+        <p class="section-desc-sub">Find your style inspiration with the latest looks in eyewear fashion.</p>
+      </div>
+
+      <div class="trending-grid">
+        <div class="trend-hero-card">
+          <img src="images/hero_campaign.png" alt="Explore Style Staples" class="trend-big-img" onerror="this.src='images/hero_masaba.jpg'">
+          <div class="trend-hero-overlay">
+            <span class="trend-pill">CAMPAIGN FILM</span>
+            <h3>Explore Style Staples</h3>
+            <p>Curated seasonal silhouettes designed to make an unforgettable entrance.</p>
+            <a href="#eyeglasses" class="trend-btn">Shop The Looks &rarr;</a>
+          </div>
+        </div>
+
+        <div class="trend-cards-col">
+          <div class="trend-subcard">
+            <img src="images/hero_masaba.jpg" alt="Masaba x John Jacobs" class="trend-sub-img">
+            <div class="trend-sub-content">
+              <span class="sub-pill">COLLECTION</span>
+              <h4>Masaba x John Jacobs</h4>
+              <a href="#sunglasses" class="sub-link">Explore Style Statements &rarr;</a>
+            </div>
+          </div>
+
+          <div class="trend-subcard">
+            <img src="images/hero_hustlr.jpg" alt="Hustlr Dark Knight" class="trend-sub-img">
+            <div class="trend-sub-content">
+              <span class="sub-pill">SPECIAL EDITION</span>
+              <h4>Hustlr Dark Knight</h4>
+              <a href="#eyeglasses" class="sub-link">Explore Collection &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: "FIND YOUR SHAPE" (WIDGET 5 - WITH FUNCTIONAL TABS) ================= -->
+  <section class="shapes-section" id="shapes">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <span class="section-subtitle">SHAPES TRENDING NOW</span>
+        <h2 class="section-heading">Find Your Shape</h2>
+      </div>
+
+      <div class="shapes-grid">
+        <a href="#eyeglasses" class="shape-card">
+          <img src="images/shape_round.jpg" alt="Round Frames" class="shape-img">
+          <span class="shape-name">Round</span>
+          <span class="shape-explore">Explore &rarr;</span>
+        </a>
+
+        <a href="#eyeglasses" class="shape-card">
+          <img src="images/shape_rectangle.jpg" alt="Rectangle Frames" class="shape-img">
+          <span class="shape-name">Rectangle</span>
+          <span class="shape-explore">Explore &rarr;</span>
+        </a>
+
+        <a href="#eyeglasses" class="shape-card">
+          <img src="images/shape_cateye.jpg" alt="Cat Eye Frames" class="shape-img">
+          <span class="shape-name">Cat-Eye</span>
+          <span class="shape-explore">Explore &rarr;</span>
+        </a>
+
+        <a href="#eyeglasses" class="shape-card">
+          <img src="images/shape_geometric.jpg" alt="Geometric Frames" class="shape-img">
+          <span class="shape-name">Geometric</span>
+          <span class="shape-explore">Explore &rarr;</span>
+        </a>
+
+        <a href="#eyeglasses" class="shape-card">
+          <img src="images/shape_aviator.jpg" alt="Aviator Frames" class="shape-img">
+          <span class="shape-name">Aviator</span>
+          <span class="shape-explore">Explore &rarr;</span>
+        </a>
+
+        <a href="#eyeglasses" class="shape-card">
+          <img src="images/shape_clubmaster.jpg" alt="Clubmaster Frames" class="shape-img">
+          <span class="shape-name">Clubmaster</span>
+          <span class="shape-explore">Explore &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: "HOUSE OF BRANDS" (WIDGET 8 - THE DIRECTORY) ================= -->
+  <section class="brands-section" id="brands">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <span class="section-subtitle">THE DIRECTORY</span>
+        <h2 class="section-heading">House of Brands</h2>
+      </div>
+
+      <div class="brands-grid">
+        <div class="brand-card">
+          <img src="images/brand_vincent_chase.jpg" alt="Vincent Chase" class="brand-card-img">
+          <div class="brand-overlay">
+            <img src="images/logo_vc.svg" alt="Vincent Chase Logo" class="brand-logo-img">
+            <p>Everyday classic styling built with modern durability.</p>
+            <a href="#eyeglasses" class="brand-shop-link">Shop Vincent Chase &rarr;</a>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <img src="images/brand_john_jacobs.jpg" alt="John Jacobs" class="brand-card-img">
+          <div class="brand-overlay">
+            <img src="images/logo_jj.svg" alt="John Jacobs Logo" class="brand-logo-img">
+            <p>Handcrafted Italian Mazzucchelli acetate &amp; surgical titanium.</p>
+            <a href="#sunglasses" class="brand-shop-link">Shop John Jacobs &rarr;</a>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <img src="images/brand_lenskart_air.jpg" alt="Lenskart Air" class="brand-card-img">
+          <div class="brand-overlay">
+            <img src="images/logo_air.svg" alt="Lenskart Air Logo" class="brand-logo-img">
+            <p>Under 12 grams. Ultem &amp; Swedish TR90 memory flexibility.</p>
+            <a href="#eyeglasses" class="brand-shop-link">Shop Lenskart Air &rarr;</a>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <img src="images/brand_owndays.jpg" alt="OWNDAYS" class="brand-card-img">
+          <div class="brand-overlay">
+            <img src="images/logo_owndays.svg" alt="OWNDAYS Logo" class="brand-logo-img">
+            <p>Tokyo design ethos, clean minimalism &amp; Japanese engineering.</p>
+            <a href="#eyeglasses" class="brand-shop-link">Shop OWNDAYS &rarr;</a>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <img src="images/brand_hustlr.jpg" alt="Hustlr" class="brand-card-img">
+          <div class="brand-overlay">
+            <img src="images/logo_hustlr.svg" alt="Hustlr Logo" class="brand-logo-img">
+            <p>Built for the unstoppable. Heavy impact strength.</p>
+            <a href="#eyeglasses" class="brand-shop-link">Shop Hustlr &rarr;</a>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <img src="images/brand_fossil.jpg" alt="Fossil" class="brand-card-img">
+          <div class="brand-overlay">
+            <img src="images/logo_fossil.svg" alt="Fossil Logo" class="brand-logo-img">
+            <p>Vintage Americana styling &amp; authentic heritage craft.</p>
+            <a href="#eyeglasses" class="brand-shop-link">Shop Fossil &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: "FRAME YOUR STORY" (WIDGET 7) ================= -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <span class="section-subtitle">EDITORIAL</span>
+        <h2 class="section-heading">Frame Your Story</h2>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-card">
+          <img src="images/story_prada.jpg" alt="Devil Wears Prada" class="story-img">
+          <div class="story-content">
+            <span class="story-badge">RUNWAY EDIT</span>
+            <h3>Devil Wears Prada</h3>
+            <p>Dramatic, sharp cat-eye silhouettes redefining high-fashion eyewear.</p>
+            <a href="#sunglasses" class="story-btn">Explore Collection &rarr;</a>
+          </div>
+        </div>
+
+        <div class="story-card">
+          <img src="images/story_hustlr_z.jpg" alt="Hustlr Z Velocity" class="story-img">
+          <div class="story-content">
+            <span class="story-badge">SPEED &amp; AGILITY</span>
+            <h3>Hustlr Z Series</h3>
+            <p>Engineered for high performance, zero slip, and ergonomic fit.</p>
+            <a href="#eyeglasses" class="story-btn">Explore Collection &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 7: "OUR STORES: COME SEE US." (WIDGET 9 - INTERACTIVE SERVICES) ================= -->
+  <section class="services-section" id="stores">
+    <div class="container services-container">
+      <div class="services-left">
+        <span class="section-subtitle">OUR STORES</span>
+        <h2 class="services-heading">Come <em>See Us.</em></h2>
+        <p class="services-sub">Visit any of our 1500+ omnichannel optical experience stores across India.</p>
+
+        <div class="services-interactive-list">
+          <label for="hometest-modal-toggle" class="service-row-card clickable">
+            <div class="service-icon-box">🩺</div>
+            <div class="service-details">
+              <strong>Free 12-Step Eye Test</strong>
+              <span>Conducted by certified clinical optometrists using computerized phoropters</span>
+            </div>
+            <span class="service-arrow">&rarr;</span>
+          </label>
+
+          <label for="hometest-modal-toggle" class="service-row-card clickable">
+            <div class="service-icon-box">🏠</div>
+            <div class="service-details">
+              <strong>Try at Home @ ₹99</strong>
+              <span>Optometrist brings 100+ frames directly to your home or office</span>
+            </div>
+            <span class="service-arrow">&rarr;</span>
+          </label>
+
+          <div class="service-row-card">
+            <div class="service-icon-box">🔧</div>
+            <div class="service-details">
+              <strong>Free Frame Repair &amp; Alignment</strong>
+              <span>Walk into any store for ultrasonic lens cleaning and nose pad fixes</span>
+            </div>
+            <span class="service-arrow">&rarr;</span>
+          </div>
+
+          <div class="service-row-card">
+            <div class="service-icon-box">⚡</div>
+            <div class="service-details">
+              <strong>Buy Online, Pick Anytime</strong>
+              <span>Pick up your completed prescription glasses at your nearest store</span>
+            </div>
+            <span class="service-arrow">&rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-right">
+        <div class="storefront-card">
+          <img src="images/storefront.jpg" alt="Lenskart Storefront" class="storefront-img">
+          <div class="storefront-badge">
+            <strong>1500+ Stores</strong>
+            <span>In 250+ Cities Nationwide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 8: "COMMUNITY: SEEN ON THE STREETS" (WIDGET 10) ================= -->
+  <section class="community-section">
+    <div class="container">
+      <div class="community-header">
+        <div>
+          <span class="section-subtitle">COMMUNITY</span>
+          <h2 class="section-heading">Seen <em>on the</em> <strong>Streets</strong></h2>
+        </div>
+        <a href="https://instagram.com/lenskart" target="_blank" class="tag-lenskart-btn">Tag @Lenskart on Instagram</a>
+      </div>
+
+      <div class="community-grid">
+        <div class="community-card">
+          <img src="images/review_user1.jpg" alt="Dark Knight x Lenskart" class="comm-img">
+          <div class="comm-overlay">
+            <h4>Dark Knight x Lenskart</h4>
+            <span>@aman.sharma • New Delhi</span>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <img src="images/review_user2.jpg" alt="Meller Nature" class="comm-img">
+          <div class="comm-overlay">
+            <h4>Meller Project Nature</h4>
+            <span>@pooja.verma • Bengaluru</span>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <img src="images/review_user3.jpg" alt="Urban Street Style" class="comm-img">
+          <div class="comm-overlay">
+            <h4>Vincent Chase Acetate</h4>
+            <span>@rohan_k • Mumbai</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 9: "LENSKART X SPIDER-MAN" (WIDGET 11) ================= -->
+  <section class="spider-section" id="spider-hero">
+    <div class="container">
+      <div class="spider-banner-card">
+        <img src="images/hero_spiderman.jpg" alt="Spider-Man Lenskart Collection" class="spider-bg-img">
+        <div class="spider-overlay-content">
+          <span class="spider-tag">LENSKART X SPIDER-MAN</span>
+          <h2>Built for the <em>hero</em> in you</h2>
+          <p>Swing into action in sharp, standout eyewear inspired by Marvel's Spider-Man.</p>
+          <a href="#eyeglasses" class="spider-cta-btn">Explore Spider-Man Range &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ================= SECTION 10: MASTER CATEGORY SHOWCASE & INTERACTIVE CATALOG ================= -->
+  <section class="products-section" id="catalog-showcase">
+    <div class="container">
+
+      <div class="section-top-bar">
+        <div class="section-title-wrap">
+          <span class="section-subtitle">EXPLORE BY CATEGORY &amp; GENDER</span>
+          <h2 class="section-heading">Handcrafted Eyewear Catalog</h2>
+        </div>
+
+        <!-- Master Category Tabs (Click any to filter products & show sub-categories) -->
+        <div class="master-tab-filters">
+          <label for="mcat-all" class="mcat-tab-label clickable" title="Show all eyewear">All (16)</label>
+          <label for="mcat-men" class="mcat-tab-label clickable" title="Men Collection & Sub-categories">Men</label>
+          <label for="mcat-women" class="mcat-tab-label clickable" title="Women Collection & Sub-categories">Women</label>
+          <label for="mcat-kids" class="mcat-tab-label clickable" title="Kids Collection & Sub-categories">Kids</label>
+          <label for="mcat-sun" class="mcat-tab-label clickable" title="Polarized Sunglasses">Sunglasses</label>
+          <label for="mcat-screen" class="mcat-tab-label clickable" title="Zero Power Screen Glasses">Screen Glasses</label>
+          <label for="mcat-contacts" class="mcat-tab-label clickable" title="Contact Lenses & Solutions">Contact Lenses</label>
+        </div>
+      </div>
+
+      <!-- ================= SUB-CATEGORIES SHOWCASE BANNER (DCS Displays matching category cards) ================= -->
+      <div class="category-subsections-container">
+
+        <!-- MEN SUB-CATEGORIES -->
+        <div class="subcat-panel subcat-panel-men">
+          <div class="subcat-header-strip">
+            <div class="subcat-title-meta">
+              <span class="subcat-tag">MEN'S EYEWEAR CATEGORIES</span>
+              <h3>Explore Men's Collections &amp; Styles</h3>
+            </div>
+            <div class="subcat-chips">
+              <span class="chip-item active">All Men Styles</span>
+              <span class="chip-item">Rectangle &amp; Square</span>
+              <span class="chip-item">Round &amp; Aviator</span>
+              <span class="chip-item">Rimless Air</span>
+            </div>
+          </div>
+          <div class="subcat-grid-cards">
+            <div class="subcat-card">
+              <img src="images/men_eyeglasses.png" alt="Men Eyeglasses" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Men's Eyeglasses</h4>
+                <p>1,200+ Styles &#8226; Full Rim &amp; Half Rim</p>
+                <span class="subcat-link">Shop Frames &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/men_sunglasses.png" alt="Men Sunglasses" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Men's Sunglasses</h4>
+                <p>800+ Styles &#8226; Polarized &amp; UV400</p>
+                <span class="subcat-link">Shop Sunglasses &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/cat_screenglasses.png" alt="Men Screen" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Computer &amp; Gaming</h4>
+                <p>450+ Styles &#8226; Zero Power BLU</p>
+                <span class="subcat-link">Shop Screen &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/cat_progressive.png" alt="Men Progressive" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Progressive &amp; Reading</h4>
+                <p>300+ Styles &#8226; Wide View Corridor</p>
+                <span class="subcat-link">Shop Bifocals &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WOMEN SUB-CATEGORIES -->
+        <div class="subcat-panel subcat-panel-women">
+          <div class="subcat-header-strip">
+            <div class="subcat-title-meta">
+              <span class="subcat-tag">WOMEN'S EYEWEAR CATEGORIES</span>
+              <h3>Explore Women's Collections &amp; Shapes</h3>
+            </div>
+            <div class="subcat-chips">
+              <span class="chip-item active">All Women Styles</span>
+              <span class="chip-item">Cat-Eye &amp; Butterfly</span>
+              <span class="chip-item">Round &amp; Oval</span>
+              <span class="chip-item">Rose Gold &amp; Metal</span>
+            </div>
+          </div>
+          <div class="subcat-grid-cards">
+            <div class="subcat-card">
+              <img src="images/women_eyeglasses.png" alt="Women Eyeglasses" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Women's Eyeglasses</h4>
+                <p>950+ Styles &#8226; Cat-Eye &amp; Chic Acetate</p>
+                <span class="subcat-link">Shop Frames &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/women_sunglasses.png" alt="Women Sunglasses" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Women's Sunglasses</h4>
+                <p>650+ Styles &#8226; Oversized &amp; Gradient Tint</p>
+                <span class="subcat-link">Shop Sunglasses &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/shape_cateye.jpg" alt="Cat-Eye Shapes" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Trending Cat-Eye</h4>
+                <p>400+ Styles &#8226; Glamour &amp; Elegance</p>
+                <span class="subcat-link">Explore Shape &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/brand_john_jacobs.jpg" alt="John Jacobs Rich Acetate" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Rich Acetate Luxury</h4>
+                <p>280+ Styles &#8226; Premium Italian Finish</p>
+                <span class="subcat-link">View Luxury &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KIDS SUB-CATEGORIES -->
+        <div class="subcat-panel subcat-panel-kids">
+          <div class="subcat-header-strip">
+            <div class="subcat-title-meta">
+              <span class="subcat-tag">KIDS' EYEWEAR CATEGORIES</span>
+              <h3>Safe, Flexible &amp; Superhero Editions</h3>
+            </div>
+            <div class="subcat-chips">
+              <span class="chip-item active">All Kids Styles</span>
+              <span class="chip-item">Flexible Silicone</span>
+              <span class="chip-item">Spider-Man Edition</span>
+              <span class="chip-item">Zero Power Screen</span>
+            </div>
+          </div>
+          <div class="subcat-grid-cards">
+            <div class="subcat-card">
+              <img src="images/kids_eyeglasses.png" alt="Kids Eyeglasses" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Hooper by Lenskart</h4>
+                <p>Ages 2-12 &#8226; Anti-Break Frames</p>
+                <span class="subcat-link">Shop Kids &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/hero_spiderman.jpg" alt="Spider-Man Collection" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Spider-Man Collection</h4>
+                <p>Marvel Official &#8226; Vibrant Colors</p>
+                <span class="subcat-link">View Superhero &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/kids_sunglasses.png" alt="Kids Sunglasses" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Kids Sunglasses</h4>
+                <p>100% UV400 &#8226; Shatterproof Lenses</p>
+                <span class="subcat-link">Shop Sun &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/cat_screenglasses.png" alt="Kids Screen Protection" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Kids Blue-Cut BLU</h4>
+                <p>Zero Power &#8226; Study &amp; Gaming Shield</p>
+                <span class="subcat-link">Shop Protection &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUNGLASSES SUB-CATEGORIES -->
+        <div class="subcat-panel subcat-panel-sun">
+          <div class="subcat-header-strip">
+            <div class="subcat-title-meta">
+              <span class="subcat-tag">SUNGLASSES CATEGORIES</span>
+              <h3>100% Polarized &amp; High-Definition Vision</h3>
+            </div>
+            <div class="subcat-chips">
+              <span class="chip-item active">All Sunglasses</span>
+              <span class="chip-item">Polarized UV400</span>
+              <span class="chip-item">Aviator Pilots</span>
+              <span class="chip-item">Powered Sun</span>
+            </div>
+          </div>
+          <div class="subcat-grid-cards">
+            <div class="subcat-card">
+              <img src="images/cat_sunglasses.png" alt="Polarized Shades" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>100% Polarized</h4>
+                <p>Glare-Free Vision &#8226; Driving &amp; Outdoors</p>
+                <span class="subcat-link">Explore Polarized &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/shape_aviator.jpg" alt="Pilot Aviator" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Classic Pilot Aviators</h4>
+                <p>Iconic Teardrop &#8226; Premium Metal</p>
+                <span class="subcat-link">Explore Aviators &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/brand_owndays.jpg" alt="OWNDAYS Japanese Eyewear" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>OWNDAYS Luxury Sun</h4>
+                <p>Japanese Craft &#8226; Ultralight Titanium</p>
+                <span class="subcat-link">View OWNDAYS &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/cat_powersun.png" alt="Prescription Sunglasses" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Powered Sunglasses</h4>
+                <p>Your Exact Eyeglass Power in Sunglasses</p>
+                <span class="subcat-link">Shop Power Sun &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCREEN GLASSES SUB-CATEGORIES -->
+        <div class="subcat-panel subcat-panel-screen">
+          <div class="subcat-header-strip">
+            <div class="subcat-title-meta">
+              <span class="subcat-tag">SCREEN GLASSES CATEGORIES</span>
+              <h3>Lenskart BLU: Filter 98% Harmful Blue Light</h3>
+            </div>
+            <div class="subcat-chips">
+              <span class="chip-item active">All Screen Glasses</span>
+              <span class="chip-item">Zero Power</span>
+              <span class="chip-item">Gaming Amber</span>
+              <span class="chip-item">Ultra-light Air</span>
+            </div>
+          </div>
+          <div class="subcat-grid-cards">
+            <div class="subcat-card">
+              <img src="images/cat_screenglasses.png" alt="Zero Power BLU" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Zero Power BLU</h4>
+                <p>For Non-Power Wearers &#8226; Work &amp; Screen</p>
+                <span class="subcat-link">Shop Zero Power &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/brand_hustlr.jpg" alt="Hustlr Gaming" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Hustlr Gaming Screen</h4>
+                <p>Anti-Reflective &#8226; Extended Screen Time</p>
+                <span class="subcat-link">Shop Gaming &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/brand_lenskart_air.jpg" alt="Lenskart Air Screen" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Air Feather-light BLU</h4>
+                <p>Weighs Under 12g &#8226; All Day Comfort</p>
+                <span class="subcat-link">Shop Air BLU &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/story_hustlr_z.jpg" alt="Z Series Blue Cut" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Hustlr Z Series</h4>
+                <p>Ergonomic Grip &#8226; Workstation Specialist</p>
+                <span class="subcat-link">Shop Z Series &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT LENSES SUB-CATEGORIES -->
+        <div class="subcat-panel subcat-panel-contacts">
+          <div class="subcat-header-strip">
+            <div class="subcat-title-meta">
+              <span class="subcat-tag">CONTACT LENSES &amp; SOLUTIONS</span>
+              <h3>Breathable Hydrogel &amp; Gorgeous Color Tints</h3>
+            </div>
+            <div class="subcat-chips">
+              <span class="chip-item active">All Contacts</span>
+              <span class="chip-item">Daily Disposables</span>
+              <span class="chip-item">Monthly Lenses</span>
+              <span class="chip-item">Color Shades</span>
+            </div>
+          </div>
+          <div class="subcat-grid-cards">
+            <div class="subcat-card">
+              <img src="images/cat_contactlenses.png" alt="Aqualens 24H Daily" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Aqualens 24H Daily</h4>
+                <p>56% Water Content &#8226; Fresh Pair Daily</p>
+                <span class="subcat-link">Shop Daily &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/product_15.jpg" alt="Bausch & Lomb Monthly" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Bausch &amp; Lomb SofLens</h4>
+                <p>Monthly Disposable &#8226; Crisp Sharp Vision</p>
+                <span class="subcat-link">Shop SofLens &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/product_16.jpg" alt="Color Contacts" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Color Contact Lenses</h4>
+                <p>Hazel, Aqua, Grey, Green &#8226; Zero &amp; Powered</p>
+                <span class="subcat-link">Shop Colors &rarr;</span>
+              </div>
+            </div>
+            <div class="subcat-card">
+              <img src="images/cat_contactlenses.png" alt="Contact Lens Solutions" class="subcat-thumb">
+              <div class="subcat-info">
+                <h4>Multi-Purpose Solutions</h4>
+                <p>Cleans, Rinses &amp; Disinfects Hydrogel</p>
+                <span class="subcat-link">Shop Solutions &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= 16 REAL PRODUCTS CATALOG GRID ================= -->
+      <div class="product-cards-grid catalog-grid">
+
+        <!-- Card 1: Men Round (VC E13634) -->
+        <div class="product-card" data-gender="men all">
+          <label for="fav-p1" class="wishlist-btn clickable" title="Add to Wishlist">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </label>
+          <span class="product-badge bestselling">BESTSELLER</span>
+
+          <div class="product-image-wrap">
+            <img src="images/product_1.jpg" alt="Vincent Chase VC E13634" class="real-product-img">
+            <span class="try-3d-pill"><svg viewBox="0 0 24 24"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/></svg>3D Try-On</span>
+          </div>
+
+          <div class="product-info">
+            <div class="rating-strip">
+              <span class="rating-pill">4.8 &#9733;</span>
+              <span class="rating-count">1,842 reviews</span>
+            </div>
+            <h3 class="product-title">Vincent Chase VC E13634</h3>
+            <p class="product-variant">Black Full Rim Round &#8226; Size: Medium</p>
+            <div class="price-row">
+              <span class="current-price">&#8377;1,200</span>
+              <span class="original-price">&#8377;2,500</span>
+              <span class="discount-badge">52% OFF</span>
+            </div>
+            <div class="gold-offer-text">&#9733; Free with Gold Membership</div>
+            <div class="swatches-row">
+              <span class="swatch-dot black active"></span>
+              <span class="swatch-dot tortoise"></span>
+              <span class="swatch-dot blue"></span>
+            </div>
+            <div class="card-action-bar">
+              <label for="cart-p1" class="btn-cart-toggle btn-add-p1 clickable">
+                <span class="txt-add"><svg class="act-icon" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Add to Cart</span>
+                <span class="txt-added"><svg class="act-icon check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> In Cart (Remove)</span>
+              </label>
+              <label for="cart-drawer-toggle" class="btn-quick-bag clickable" title="View in Cart">
+                <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Men Rectangle (Lenskart Air LA E15412) -->
+        <div class="product-card" data-gender="men all">
+          <label for="fav-p2" class="wishlist-btn clickable" title="Add to Wishlist">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </label>
+          <span class="product-badge blu-badge">ULTRA LIGHT</span>
+
+          <div class="product-image-wrap">
+            <img src="images/product_2.jpg" alt="Lenskart Air LA E15412" class="real-product-img">
+            <span class="try-3d-pill"><svg viewBox="0 0 24 24"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/></svg>3D Try-On</span>
+          </div>
+
+          <div class="product-info">
+            <div class="rating-strip">
+              <span class="rating-pill">4.9 &#9733;</span>
+              <span class="rating-count">3,120 reviews</span>
+            </div>
+            <h3 class="product-title">Lenskart Air LA E15412</h3>
+            <p class="product-variant">Gunmetal Matte Rectangle &#8226; Size: Wide</p>
+            <div class="price-row">
+              <span class="current-price">&#8377;2,000</span>
+              <span class="original-price">&#8377;4,000</span>
+              <span class="discount-badge">50% OFF</span>
+            </div>
+            <div class="gold-offer-text">&#9733; Free with Gold Membership</div>
+            <div class="swatches-row">
+              <span class="swatch-dot grey active"></span>
+              <span class="swatch-dot black"></span>
+            </div>
+            <div class="card-action-bar">
+              <label for="cart-p2" class="btn-cart-toggle btn-add-p2 clickable">
+                <span class="txt-add"><svg class="act-icon" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Add to Cart</span>
+                <span class="txt-added"><svg class="act-icon check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> In Cart (Remove)</span>
+              </label>
+              <label for="cart-drawer-toggle" class="btn-quick-bag clickable" title="View in Cart">
+                <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Women Cat-Eye (VC E14981) -->
+        <div class="product-card" data-gender="women all">
+          <label for="fav-p3" class="wishlist-btn clickable" title="Add to Wishlist">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </label>
+          <span class="product-badge bestselling">TRENDING</span>
+
+          <div class="product-image-wrap">
+            <img src="images/product_3.jpg" alt="Vincent Chase VC E14981" class="real-product-img">
+            <span class="try-3d-pill"><svg viewBox="0 0 24 24"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/></svg>3D Try-On</span>
+          </div>
+
+          <div class="product-info">
+            <div class="rating-strip">
+              <span class="rating-pill">4.9 &#9733;</span>
+              <span class="rating-count">2,410 reviews</span>
+            </div>
+            <h3 class="product-title">Vincent Chase Chic Cat-Eye</h3>
+            <p class="product-variant">Rose Gold Rimless Metal &#8226; Size: Narrow</p>
+            <div class="price-row">
+              <span class="current-price">&#8377;1,500</span>
+              <span class="original-price">&#8377;3,000</span>
+              <span class="discount-badge">50% OFF</span>
+            </div>
+            <div class="gold-offer-text">&#9733; Free with Gold Membership</div>
+            <div class="swatches-row">
+              <span class="swatch-dot gold active"></span>
+              <span class="swatch-dot silver"></span>
+            </div>
+            <div class="card-action-bar">
+              <label for="cart-p3" class="btn-cart-toggle btn-add-p3 clickable">
+                <span class="txt-add"><svg class="act-icon" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Add to Cart</span>
+                <span class="txt-added"><svg class="act-icon check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> In Cart (Remove)</span>
+              </label>
+              <label for="cart-drawer-toggle" class="btn-quick-bag clickable" title="View in Cart">
+                <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Women Hexagonal (JJ E10234) -->
+        <div class="product-card" data-gender="women all">
+          <label for="fav-p4" class="wishlist-btn clickable" title="Add to Wishlist">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </label>
+          <span class="product-badge gold-badge">JOHN JACOBS</span>
+
+          <div class="product-image-wrap">
+            <img src="images/product_4.jpg" alt="John Jacobs JJ E10234" class="real-product-img">
+            <span class="try-3d-pill"><svg viewBox="0 0 24 24"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/></svg>3D Try-On</span>
+          </div>
+
+          <div class="product-info">
+            <div class="rating-strip">
+              <span class="rating-pill">4.9 &#9733;</span>
+              <span class="rating-count">1,180 reviews</span>
+            </div>
+            <h3 class="product-title">John Jacobs Rich Acetate</h3>
+            <p class="product-variant">Amber Tortoise Geometric &#8226; Size: Medium</p>
+            <div class="price-row">
+              <span class="current-price">&#8377;2,500</span>
+              <span class="original-price">&#8377;5,000</span>
+              <span class="discount-badge">50% OFF</span>
+            </div>
+            <div class="gold-offer-text">&#9733; Free with Gold Membership</div>
+            <div class="swatches-row">
+              <span class="swatch-dot tortoise active"></span>
+              <span class="swatch-dot amber"></span>
+            </div>
+            <div class="card-action-bar">
+              <label for="cart-p4" class="btn-cart-toggle btn-add-p4 clickable">
+                <span class="txt-add"><svg class="act-icon" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Add to Cart</span>
+                <span class="txt-added"><svg class="act-icon check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> In Cart (Remove)</span>
+              </label>
+              <label for="cart-drawer-toggle" class="btn-quick-bag clickable" title="View in Cart">
+                <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Kids Spider-Man (Hooper HP K1002) -->
+        <div class="product-card" data-gender="kids all">
+          <label for="fav-p5" class="wishlist-btn clickable" title="Add to Wishlist">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </label>
+          <span class="product-badge bestselling">SPIDER-MAN</span>
+
+          <div class="product-image-wrap">
+            <img src="images/product_9.jpg" alt="Hooper Spider-Man" class="real-product-img">
+            <span class="try-3d-pill"><svg viewBox="0 0 24 24"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/></svg>3D Try-On</span>
+          </div>
+
+          <div class="product-info">
+            <div class="rating-strip">
+              <span class="rating-pill">4.9 &#9733;</span>
+              <span class="rating-count">1,560 reviews</span>
+            </div>
+            <h3 class="product-title">Hooper Marvel Spider-Man</h3>
+            <p class="product-variant">Red &amp; Blue TR90 Flexible &#8226; Age: 5-10 yrs</p>
+            <div class="price-row">
+              <span class="current-price">&#8377;1,100</span>
+              <span class="original-price">&#8377;2,200</span>
+              <span class="discount-badge">50% OFF</span>
+            </div>
+            <div class="gold-offer-text">&#9733; 100% Unbreakable Silicone</div>
+            <div class="swatches-row">
+              <span class="swatch-dot red active"></span>
+              <span class="swatch-dot blue"></span>
+            </div>
+            <div class="card-action-bar">
+              <label for="cart-p5" class="btn-cart-toggle btn-add-p5 clickable">
+                <span class="txt-add"><svg class="act-icon" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Add to Cart</span>
+                <span class="txt-added"><svg class="act-icon check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> In Cart (Remove)</span>
+              </label>
+              <label for="cart-drawer-toggle" class="btn-quick-bag clickable" title="View in Cart">
+                <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Polarized Sunglasses (Vincent Chase Aviator) -->
+        <div class="product-card" data-gender="sun men all">
+          <label for="fav-p6" class="wishlist-btn clickable" title="Add to Wishlist">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </label>
+          <span class="product-badge sun-badge">POLARIZED</span>
+
+          <div class="product-image-wrap">
+            <img src="images/product_6.jpg" alt="Vincent Chase Polarized Pilot" class="real-product-img">
+            <span class="try-3d-pill"><svg viewBox="0 0 24 24"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/></svg>3D Try-On</span>
+          </div>
+
+          <div class="product-info">
+            <div class="rating-strip">
+              <span class="rating-pill">4.9 &#9733;</span>
+              <span class="rating-count">3,890 reviews</span>
+            </div>
+            <h3 class="product-title">Vincent Chase Polarized Pilot</h3>
+            <p class="product-variant">Gunmetal Frame &#8226; Green UV400 Lens</p>
+            <div class="price-row">
+              <span class="current-price">&#8377;1,600</span>
+              <span class="original-price">&#8377;3,200</span>
+              <span class="discount-badge">50% OFF</span>
+            </div>
+            <div class="gold-offer-text">&#9733; Free with Gold Membership</div>
+            <div class="swatches-row">
+              <span class="swatch-dot green active"></span>
+              <span class="swatch-dot black"></span>
+            </div>
+            <div class="card-action-bar">
+              <label for="cart-p6" class="btn-cart-toggle btn-add-p6 clickable">
+                <span class="txt-add"><svg class="act-icon" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Add to Cart</span>
+                <span class="txt-added"><svg class="act-icon check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> In Cart (Remove)</span>
+              </label>
+              <label for="cart-drawer-toggle" class="btn-quick-bag clickable" title="View in Cart">
+                <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: Screen Glasses (Hustlr BLU) -->
+        <div class="product-card" data-gender="screen men women all">
+          <label for="fav-p7" class="wishlist-btn clickable" title="Add to Wishlist">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </label>
+          <span class="product-badge blu-badge">ZERO POWER BLU</span>
+
+          <div class="product-image-wrap">
+            <img src="images/product_7.jpg" alt="Hustlr Computer BLU" class="real-product-img">
+            <span class="try-3d-pill"><svg viewBox="0 0 24 24"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/></svg>3D Try-On</span>
+          </div>
+
+          <div class="product-info">
+            <div class="rating-strip">
+              <span class="rating-pill">4.8 &#9733;</span>
+              <span class="rating-count">890 reviews</span>
+            </div>
+            <h3 class="product-title">Hustlr BLU Anti-Fatigue</h3>
+            <p class="product-variant">Matte Black Lightweight &#8226; Computer Shield</p>
+            <div class="price-row">
+              <span class="current-price">&#8377;1,300</span>
+              <span class="original-price">&#8377;2,600</span>
+              <span class="discount-badge">50% OFF</span>
+            </div>
+            <div class="gold-offer-text">&#9733; Free with Gold Membership</div>
+            <div class="swatches-row">
+              <span class="swatch-dot black active"></span>
+              <span class="swatch-dot grey"></span>
+            </div>
+            <div class="card-action-bar">
+              <label for="cart-p7" class="btn-cart-toggle btn-add-p7 clickable">
+                <span class="txt-add"><svg class="act-icon" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Add to Cart</span>
+                <span class="txt-added"><svg class="act-icon check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> In Cart (Remove)</span>
+              </label>
+              <label for="cart-drawer-toggle" class="btn-quick-bag clickable" title="View in Cart">
+                <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8: Contact Lenses (Aqualens 24H) -->
+        <div class="product-card" data-gender="contacts all">
+          <label for="fav-p8" class="wishlist-btn clickable" title="Add to Wishlist">
+            <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </label>
+          <span class="product-badge bestselling">DAILY DISPOSABLE</span>
+
+          <div class="product-image-wrap">
+            <img src="images/product_15.jpg" alt="Aqualens 24H Daily" class="real-product-img">
+          </div>
+
+          <div class="product-info">
+            <div class="rating-strip">
+              <span class="rating-pill">4.9 &#9733;</span>
+              <span class="rating-count">4,210 reviews</span>
+            </div>
+            <h3 class="product-title">Aqualens 24H Daily (Pack of 30)</h3>
+            <p class="product-variant">High Oxygen Transmissibility &#8226; Ultra Fresh</p>
+            <div class="price-row">
+              <span class="current-price">&#8377;1,299</span>
+              <span class="original-price">&#8377;1,800</span>
+              <span class="discount-badge">28% OFF</span>
+            </div>
+            <div class="gold-offer-text">&#9733; BOGO Offer Available</div>
+            <div class="swatches-row">
+              <span class="swatch-dot blue active"></span>
+              <span class="swatch-dot grey"></span>
+            </div>
+            <div class="card-action-bar">
+              <label for="cart-p8" class="btn-cart-toggle btn-add-p8 clickable">
+                <span class="txt-add"><svg class="act-icon" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Add to Cart</span>
+                <span class="txt-added"><svg class="act-icon check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> In Cart (Remove)</span>
+              </label>
+              <label for="cart-drawer-toggle" class="btn-quick-bag clickable" title="View in Cart">
+                <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 13: 3D TRY-ON INTERACTIVE SHOWCASE ================= -->
+  <section class="try-on-showcase-section" id="try-3d">
+    <div class="container try-on-grid">
+      <div class="try-on-media">
+        <div class="face-scanner-box">
+          <div class="scanner-laser"></div>
+          <img src="images/review_user1.jpg" alt="3D Face Try On Model" class="scanner-avatar-img">
+          <div class="scan-status-pill">
+            <span class="live-dot"></span> 3D Virtual Mirror Active
+          </div>
+        </div>
+      </div>
+      <div class="try-on-info">
+        <span class="try-tag">AUGMENTED REALITY TECH</span>
+        <h2>Try 10,000+ Frames in 3D Right from Your Screen</h2>
+        <p>Our advanced 3D face scan precisely maps your face shape, temple width, and interpupillary distance (IPD) so you know exactly how each pair fits you in real life.</p>
+        <div class="try-steps">
+          <div class="try-step-item">
+            <span class="step-num">1</span>
+            <div>
+              <strong>Instant 5-Second Face Scan</strong>
+              <span>Turn your camera on to create your private 3D face model.</span>
+            </div>
+          </div>
+          <div class="try-step-item">
+            <span class="step-num">2</span>
+            <div>
+              <strong>Accurate Fit Recommendation</strong>
+              <span>Find whether Narrow, Medium, or Wide fits your facial structure.</span>
+            </div>
+          </div>
+          <div class="try-step-item">
+            <span class="step-num">3</span>
+            <div>
+              <strong>180-Degree Angle Rotation</strong>
+              <span>Inspect frames from front, side, and tilt angles before ordering.</span>
+            </div>
+          </div>
+        </div>
+        <a href="#eyeglasses" class="try-cta-btn">Launch 3D Try-On Mirror</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 14: APP DOWNLOAD & STORE FINDER ================= -->
+  <section class="download-banner-section">
+    <div class="container download-flex">
+      <div class="download-text">
+        <span class="app-sub">EXCLUSIVE APP FEATURES</span>
+        <h2>Experience the Future of Eyewear on the Lenskart App</h2>
+        <p>Get instant 3D Try-On, 10,000+ styles, 1-hour delivery in select metro cities, and real-time order tracking.</p>
+        <div class="app-badges-row">
+          <a href="#" class="app-badge-link">
+            <img src="images/app_store.png" alt="Download on App Store" class="store-badge-img">
+          </a>
+          <a href="#" class="app-badge-link">
+            <img src="images/google_play.png" alt="Get it on Google Play" class="store-badge-img">
+          </a>
+        </div>
+      </div>
+      <div class="download-store-img-box">
+        <img src="images/storefront.jpg" alt="Lenskart 1500+ Stores" class="storefront-preview">
+        <span class="store-count-label">Visit 1500+ Omnichannel Stores Near You</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPREHENSIVE LENSKART FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="container footer-top-grid">
+      <div class="footer-col">
+        <h4 class="footer-col-title">Services &amp; Help</h4>
+        <ul class="footer-links">
+          <li><a href="#stores">Store Locator</a></li>
+          <li><label for="hometest-modal-toggle" class="clickable">Book Home Eye Test</label></li>
+          <li><a href="#gold">Lenskart Gold Membership</a></li>
+          <li><a href="#try-3d">3D Try On Guide</a></li>
+          <li><label for="auth-modal-toggle" class="clickable">Track Order Status</label></li>
+          <li><a href="#eyeglasses">Frame Size Guide</a></li>
+          <li><a href="#eyeglasses">Buying Guide for Lenses</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">About Lenskart</h4>
+        <ul class="footer-links">
+          <li><a href="#">About Us &amp; Our Story</a></li>
+          <li><a href="#">Careers at Lenskart</a></li>
+          <li><a href="#">Lenskart International</a></li>
+          <li><a href="#">In The News &amp; Press</a></li>
+          <li><a href="#">Peyush Bansal Vision</a></li>
+          <li><a href="#">CSR &amp; Vision Mission</a></li>
+          <li><a href="#">Franchise Enquiry</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Popular Categories</h4>
+        <ul class="footer-links">
+          <li><a href="#eyeglasses">Round Eyeglasses</a></li>
+          <li><a href="#category-showcase">Computer Blue Cut Glasses</a></li>
+          <li><a href="#sunglasses">Polarized Sunglasses</a></li>
+          <li><a href="#shapes">Cat Eye Glasses for Women</a></li>
+          <li><a href="#eyeglasses">Progressive Power Lenses</a></li>
+          <li><a href="#category-showcase">Contact Lenses &amp; Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Customer Support</h4>
+        <p class="footer-text">Have a question or need assistance with your eyewear prescription?</p>
+        <div class="footer-contact-item">
+          <strong>Toll-Free Helpline:</strong>
+          <a href="tel:18002024444" class="helpline-num">1800-202-4444</a>
+        </div>
+        <div class="footer-contact-item">
+          <strong>Email Us:</strong>
+          <a href="mailto:support@lenskart.com">support@lenskart.com</a>
+        </div>
+        <div class="footer-social-icons">
+          <a href="#" class="social-circle" title="Instagram">IG</a>
+          <a href="#" class="social-circle" title="Facebook">FB</a>
+          <a href="#" class="social-circle" title="Twitter/X">X</a>
+          <a href="#" class="social-circle" title="YouTube">YT</a>
+          <a href="#" class="social-circle" title="LinkedIn">IN</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO Search Tag Cloud -->
+    <div class="container footer-seo-strip">
+      <div class="seo-title">POPULAR SEARCHES &amp; KEYWORDS:</div>
+      <p class="seo-text">
+        Eyeglasses | Sunglasses | Computer Glasses | Chashma | Goggles | Contact Lenses | Mens Eyeglasses | Womens Eyeglasses | Vincent Chase Glasses | John Jacobs Luxury | Lenskart Air | Hooper Kids | Anti Glare Lenses | Blue Light Blocking Glasses | Bifocal Lenses | Progressive Glasses | Power Sunglasses | Polarized Wayfarers | Aviator Sunglasses | Reading Glasses | Spectacles Frames Online | Free Eye Test at Home | Lenskart Near Me
+      </p>
+    </div>
+
+    <!-- Bottom Copyright & Payment Methods -->
+    <div class="footer-bottom-bar">
+      <div class="container bottom-flex">
+        <div class="copyright-text">
+          &copy; 2026 Lenskart Solutions Pvt. Ltd. All rights reserved. Pure HTML5 &amp; CSS3 Architecture.
+        </div>
+        <div class="payment-badges">
+          <span class="pay-badge">VISA</span>
+          <span class="pay-badge">MasterCard</span>
+          <span class="pay-badge">UPI</span>
+          <span class="pay-badge">RuPay</span>
+          <span class="pay-badge">Net Banking</span>
+          <span class="pay-badge">EMI Available</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= PURE CSS MODAL: SIGN IN / SIGN UP ================= -->
+  <div class="modal-backdrop">
+    <label for="auth-modal-toggle" class="modal-outside-closer"></label>
+    <div class="auth-modal-dialog">
+      <label for="auth-modal-toggle" class="modal-close-btn clickable">&times;</label>
+      
+      <div class="modal-banner-top">
+        <img src="images/logo_main.svg" alt="Lenskart" height="28" style="margin: 0 auto 10px;" onerror="this.src='images/logo.png'">
+        <h3>Sign In / Sign Up</h3>
+        <p>Get started with your Gold benefits &amp; track prescription history</p>
+      </div>
+
+      <form class="auth-form" action="#" onsubmit="return false;">
+        <div class="form-group">
+          <label>Mobile Number or Email</label>
+          <div class="input-with-prefix">
+            <span class="phone-prefix">+91</span>
+            <input type="tel" placeholder="Enter 10 digit mobile number" class="auth-input" required>
+          </div>
+        </div>
+
+        <div class="form-benefits">
+          <div class="benefit-item">✓ Buy 1 Get 1 Free on Gold</div>
+          <div class="benefit-item">✓ Saved Prescription Locker</div>
+          <div class="benefit-item">✓ Quick 1-Click Checkout</div>
+        </div>
+
+        <button type="submit" class="auth-submit-btn">Proceed with OTP &rarr;</button>
+        <p class="terms-disclaimer">By proceeding, you agree to Lenskart's <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= PURE CSS SIDEBAR: CART DRAWER ================= -->
+  <div class="drawer-backdrop">
+    <label for="cart-drawer-toggle" class="drawer-outside-closer"></label>
+    <aside class="cart-slide-drawer">
+      <div class="cart-drawer-header">
+        <div class="cart-header-title">
+          <svg viewBox="0 0 24 24" class="cart-title-icon"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/></svg>
+          <h3>My Cart (<span class="header-cart-qty"></span> Items)</h3>
+        </div>
+        <label for="cart-drawer-toggle" class="cart-close-btn clickable">&times;</label>
+      </div>
+
+      <!-- FREE DELIVERY BANNER (Only shows when items > 0) -->
+      <div class="cart-congrats-banner">
+        <span>&#127881; <strong>Congrats!</strong> You unlocked FREE Delivery &amp; Hard Case!</span>
+      </div>
+
+      <!-- EMPTY CART NOTICE (Displayed when all items are 0) -->
+      <div class="cart-empty-state">
+        <div class="empty-icon-circle">&#128722;</div>
+        <h4>Your Shopping Cart is Empty</h4>
+        <p>Looks like you haven't added any eyewear yet. Explore our bestsellers and find your signature style!</p>
+        <label for="cart-drawer-toggle" class="btn-empty-shop clickable">Explore Bestsellers &rarr;</label>
+      </div>
+
+      <!-- CART ITEMS LIST (Dynamic Pure CSS Add / Remove / Quantity Stepper) -->
+      <div class="cart-items-scroll">
+
+        <!-- Entry 1: Vincent Chase VC E13634 -->
+        <div class="cart-item-row entry-p1">
+          <img src="images/product_1.jpg" alt="VC E13634" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Vincent Chase VC E13634</h4>
+              <span class="item-spec">Black Round &#8226; Size: Medium</span>
+            </div>
+            
+            <div class="qty-control-row">
+              <span class="qty-title">Quantity:</span>
+              <div class="qty-stepper-box">
+                <span class="q-val-1">1</span>
+                <span class="q-val-2">2</span>
+                <span class="q-val-3">3</span>
+                <div class="qty-btn-actions">
+                  <label for="p1-q1" class="btn-qty-step btn-dec-1">-</label>
+                  <label for="p1-q2" class="btn-qty-step btn-dec-2">-</label>
+                  <label for="p1-q2" class="btn-qty-step btn-inc-2">+</label>
+                  <label for="p1-q3" class="btn-qty-step btn-inc-3">+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-price-box">
+              <div class="price-line p-amt-1">&#8377;1,200 <del>&#8377;2,500</del></div>
+              <div class="price-line p-amt-2">&#8377;2,400 <small>(&#8377;1,200 &times; 2)</small></div>
+              <div class="price-line p-amt-3">&#8377;3,600 <small>(&#8377;1,200 &times; 3)</small></div>
+              <span class="bogo-tag">BOGO Applied</span>
+            </div>
+
+            <label for="cart-p1" class="btn-remove-cart clickable" title="Remove from cart">
+              <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              <span>Remove</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Entry 2: Lenskart Air LA E15412 -->
+        <div class="cart-item-row entry-p2">
+          <img src="images/product_2.jpg" alt="LA E15412" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Lenskart Air LA E15412</h4>
+              <span class="item-spec">Gunmetal Matte &#8226; Ultra-light</span>
+            </div>
+            
+            <div class="qty-control-row">
+              <span class="qty-title">Quantity:</span>
+              <div class="qty-stepper-box">
+                <span class="q-val-1">1</span>
+                <span class="q-val-2">2</span>
+                <span class="q-val-3">3</span>
+                <div class="qty-btn-actions">
+                  <label for="p2-q1" class="btn-qty-step btn-dec-1">-</label>
+                  <label for="p2-q2" class="btn-qty-step btn-dec-2">-</label>
+                  <label for="p2-q2" class="btn-qty-step btn-inc-2">+</label>
+                  <label for="p2-q3" class="btn-qty-step btn-inc-3">+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-price-box">
+              <div class="price-line p-amt-1">&#8377;2,000 <del>&#8377;4,000</del></div>
+              <div class="price-line p-amt-2">&#8377;4,000 <small>(&#8377;2,000 &times; 2)</small></div>
+              <div class="price-line p-amt-3">&#8377;6,000 <small>(&#8377;2,000 &times; 3)</small></div>
+              <span class="bogo-tag">BOGO Applied</span>
+            </div>
+
+            <label for="cart-p2" class="btn-remove-cart clickable" title="Remove from cart">
+              <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              <span>Remove</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Entry 3: Vincent Chase Chic Cat-Eye -->
+        <div class="cart-item-row entry-p3">
+          <img src="images/product_3.jpg" alt="VC E14981" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Vincent Chase Chic Cat-Eye</h4>
+              <span class="item-spec">Rose Gold Rimless &#8226; Women</span>
+            </div>
+            
+            <div class="qty-control-row">
+              <span class="qty-title">Quantity:</span>
+              <div class="qty-stepper-box">
+                <span class="q-val-1">1</span>
+                <span class="q-val-2">2</span>
+                <span class="q-val-3">3</span>
+                <div class="qty-btn-actions">
+                  <label for="p3-q1" class="btn-qty-step btn-dec-1">-</label>
+                  <label for="p3-q2" class="btn-qty-step btn-dec-2">-</label>
+                  <label for="p3-q2" class="btn-qty-step btn-inc-2">+</label>
+                  <label for="p3-q3" class="btn-qty-step btn-inc-3">+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-price-box">
+              <div class="price-line p-amt-1">&#8377;1,500 <del>&#8377;3,000</del></div>
+              <div class="price-line p-amt-2">&#8377;3,000 <small>(&#8377;1,500 &times; 2)</small></div>
+              <div class="price-line p-amt-3">&#8377;4,500 <small>(&#8377;1,500 &times; 3)</small></div>
+              <span class="bogo-tag">BOGO Applied</span>
+            </div>
+
+            <label for="cart-p3" class="btn-remove-cart clickable" title="Remove from cart">
+              <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              <span>Remove</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Entry 4: John Jacobs Rich Acetate -->
+        <div class="cart-item-row entry-p4">
+          <img src="images/product_4.jpg" alt="JJ E10234" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>John Jacobs Rich Acetate</h4>
+              <span class="item-spec">Amber Geometric &#8226; Luxury</span>
+            </div>
+            
+            <div class="qty-control-row">
+              <span class="qty-title">Quantity:</span>
+              <div class="qty-stepper-box">
+                <span class="q-val-1">1</span>
+                <span class="q-val-2">2</span>
+                <span class="q-val-3">3</span>
+                <div class="qty-btn-actions">
+                  <label for="p4-q1" class="btn-qty-step btn-dec-1">-</label>
+                  <label for="p4-q2" class="btn-qty-step btn-dec-2">-</label>
+                  <label for="p4-q2" class="btn-qty-step btn-inc-2">+</label>
+                  <label for="p4-q3" class="btn-qty-step btn-inc-3">+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-price-box">
+              <div class="price-line p-amt-1">&#8377;2,500 <del>&#8377;5,000</del></div>
+              <div class="price-line p-amt-2">&#8377;5,000 <small>(&#8377;2,500 &times; 2)</small></div>
+              <div class="price-line p-amt-3">&#8377;7,500 <small>(&#8377;2,500 &times; 3)</small></div>
+              <span class="bogo-tag">BOGO Applied</span>
+            </div>
+
+            <label for="cart-p4" class="btn-remove-cart clickable" title="Remove from cart">
+              <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              <span>Remove</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Entry 5: Hooper Marvel Spider-Man -->
+        <div class="cart-item-row entry-p5">
+          <img src="images/product_9.jpg" alt="Hooper Spider-Man" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Hooper Marvel Spider-Man</h4>
+              <span class="item-spec">Red &amp; Blue TR90 &#8226; Kids</span>
+            </div>
+            
+            <div class="qty-control-row">
+              <span class="qty-title">Quantity:</span>
+              <div class="qty-stepper-box">
+                <span class="q-val-1">1</span>
+                <span class="q-val-2">2</span>
+                <span class="q-val-3">3</span>
+                <div class="qty-btn-actions">
+                  <label for="p5-q1" class="btn-qty-step btn-dec-1">-</label>
+                  <label for="p5-q2" class="btn-qty-step btn-dec-2">-</label>
+                  <label for="p5-q2" class="btn-qty-step btn-inc-2">+</label>
+                  <label for="p5-q3" class="btn-qty-step btn-inc-3">+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-price-box">
+              <div class="price-line p-amt-1">&#8377;1,100 <del>&#8377;2,200</del></div>
+              <div class="price-line p-amt-2">&#8377;2,200 <small>(&#8377;1,100 &times; 2)</small></div>
+              <div class="price-line p-amt-3">&#8377;3,300 <small>(&#8377;1,100 &times; 3)</small></div>
+              <span class="bogo-tag">BOGO Applied</span>
+            </div>
+
+            <label for="cart-p5" class="btn-remove-cart clickable" title="Remove from cart">
+              <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              <span>Remove</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Entry 6: Vincent Chase Polarized Pilot -->
+        <div class="cart-item-row entry-p6">
+          <img src="images/product_6.jpg" alt="VC Polarized Pilot" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Vincent Chase Polarized Pilot</h4>
+              <span class="item-spec">Gunmetal &#8226; Green UV400</span>
+            </div>
+            
+            <div class="qty-control-row">
+              <span class="qty-title">Quantity:</span>
+              <div class="qty-stepper-box">
+                <span class="q-val-1">1</span>
+                <span class="q-val-2">2</span>
+                <span class="q-val-3">3</span>
+                <div class="qty-btn-actions">
+                  <label for="p6-q1" class="btn-qty-step btn-dec-1">-</label>
+                  <label for="p6-q2" class="btn-qty-step btn-dec-2">-</label>
+                  <label for="p6-q2" class="btn-qty-step btn-inc-2">+</label>
+                  <label for="p6-q3" class="btn-qty-step btn-inc-3">+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-price-box">
+              <div class="price-line p-amt-1">&#8377;1,600 <del>&#8377;3,200</del></div>
+              <div class="price-line p-amt-2">&#8377;3,200 <small>(&#8377;1,600 &times; 2)</small></div>
+              <div class="price-line p-amt-3">&#8377;4,800 <small>(&#8377;1,600 &times; 3)</small></div>
+              <span class="bogo-tag">BOGO Applied</span>
+            </div>
+
+            <label for="cart-p6" class="btn-remove-cart clickable" title="Remove from cart">
+              <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              <span>Remove</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Entry 7: Hustlr BLU Anti-Fatigue -->
+        <div class="cart-item-row entry-p7">
+          <img src="images/product_7.jpg" alt="Hustlr BLU" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Hustlr BLU Anti-Fatigue</h4>
+              <span class="item-spec">Matte Black &#8226; Zero Power BLU</span>
+            </div>
+            
+            <div class="qty-control-row">
+              <span class="qty-title">Quantity:</span>
+              <div class="qty-stepper-box">
+                <span class="q-val-1">1</span>
+                <span class="q-val-2">2</span>
+                <span class="q-val-3">3</span>
+                <div class="qty-btn-actions">
+                  <label for="p7-q1" class="btn-qty-step btn-dec-1">-</label>
+                  <label for="p7-q2" class="btn-qty-step btn-dec-2">-</label>
+                  <label for="p7-q2" class="btn-qty-step btn-inc-2">+</label>
+                  <label for="p7-q3" class="btn-qty-step btn-inc-3">+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-price-box">
+              <div class="price-line p-amt-1">&#8377;1,300 <del>&#8377;2,600</del></div>
+              <div class="price-line p-amt-2">&#8377;2,600 <small>(&#8377;1,300 &times; 2)</small></div>
+              <div class="price-line p-amt-3">&#8377;3,900 <small>(&#8377;1,300 &times; 3)</small></div>
+              <span class="bogo-tag">BOGO Applied</span>
+            </div>
+
+            <label for="cart-p7" class="btn-remove-cart clickable" title="Remove from cart">
+              <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              <span>Remove</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Entry 8: Aqualens 24H Daily -->
+        <div class="cart-item-row entry-p8">
+          <img src="images/product_15.jpg" alt="Aqualens 24H Daily" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Aqualens 24H Daily</h4>
+              <span class="item-spec">Pack of 30 &#8226; Hydrogel Lenses</span>
+            </div>
+            
+            <div class="qty-control-row">
+              <span class="qty-title">Quantity:</span>
+              <div class="qty-stepper-box">
+                <span class="q-val-1">1</span>
+                <span class="q-val-2">2</span>
+                <span class="q-val-3">3</span>
+                <div class="qty-btn-actions">
+                  <label for="p8-q1" class="btn-qty-step btn-dec-1">-</label>
+                  <label for="p8-q2" class="btn-qty-step btn-dec-2">-</label>
+                  <label for="p8-q2" class="btn-qty-step btn-inc-2">+</label>
+                  <label for="p8-q3" class="btn-qty-step btn-inc-3">+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-price-box">
+              <div class="price-line p-amt-1">&#8377;1,299 <del>&#8377;1,800</del></div>
+              <div class="price-line p-amt-2">&#8377;2,598 <small>(&#8377;1,299 &times; 2)</small></div>
+              <div class="price-line p-amt-3">&#8377;3,897 <small>(&#8377;1,299 &times; 3)</small></div>
+              <span class="bogo-tag">BOGO Applied</span>
+            </div>
+
+            <label for="cart-p8" class="btn-remove-cart clickable" title="Remove from cart">
+              <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              <span>Remove</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- BOGO BENEFIT UPSELL -->
+        <div class="bogo-upsell-card">
+          <div class="upsell-badge">BOGO BENEFIT</div>
+          <strong>Get Your 2nd Pair for &#8377;0!</strong>
+          <p>Add any other frame from Vincent Chase collection to cart for FREE with your Gold membership.</p>
+          <a href="#catalog-showcase" class="add-pair-link">+ Add Second Pair Free &rarr;</a>
+        </div>
+      </div>
+
+      <!-- CHECKOUT BILL FOOTER -->
+      <div class="cart-drawer-footer">
+        <div class="bill-row">
+          <span>Subtotal</span>
+          <span>&#8377;2,400</span>
+        </div>
+        <div class="bill-row green">
+          <span>BOGO Discount (50% OFF)</span>
+          <span>- &#8377;1,200</span>
+        </div>
+        <div class="bill-row">
+          <span>Delivery &amp; Hard Case</span>
+          <span class="free-text">FREE</span>
+        </div>
+        <div class="bill-row total-row">
+          <strong>Total Payable</strong>
+          <strong>&#8377;1,200</strong>
+        </div>
+
+        <button class="checkout-btn">Proceed to Checkout &rarr;</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ================= PURE CSS SIDEBAR: WISHLIST DRAWER ================= -->
+  <div class="wish-drawer-backdrop">
+    <label for="wishlist-drawer-toggle" class="drawer-outside-closer"></label>
+    <aside class="wish-slide-drawer">
+      <div class="cart-drawer-header">
+        <div class="cart-header-title">
+          <svg viewBox="0 0 24 24" class="cart-title-icon" style="fill: #e53935;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <h3>My Wishlist (<span class="header-wish-qty"></span> Items)</h3>
+        </div>
+        <label for="wishlist-drawer-toggle" class="cart-close-btn clickable">&times;</label>
+      </div>
+
+      <!-- EMPTY WISHLIST NOTICE -->
+      <div class="wish-empty-state">
+        <div class="empty-icon-circle">&#128156;</div>
+        <h4>Your Wishlist is Empty</h4>
+        <p>You haven't saved any eyewear yet. Explore our handcrafted frames and tap the heart icon to save your favourites!</p>
+        <label for="wishlist-drawer-toggle" class="btn-empty-shop clickable">Explore Frames &rarr;</label>
+      </div>
+
+      <!-- WISHLIST ITEMS SCROLL -->
+      <div class="cart-items-scroll wish-items-scroll">
+
+        <!-- Wish Entry 1 -->
+        <div class="cart-item-row wish-entry-p1">
+          <img src="images/product_1.jpg" alt="VC E13634" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Vincent Chase VC E13634</h4>
+              <span class="item-spec">Black Round &#8226; Size: Medium</span>
+            </div>
+            <div class="price-line">&#8377;1,200 <del>&#8377;2,500</del></div>
+            <div class="wish-actions-row">
+              <label for="cart-p1" class="btn-wish-move-cart clickable">+ Move to Cart</label>
+              <label for="fav-p1" class="btn-remove-cart clickable" title="Remove from wishlist">
+                <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                <span>Remove</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wish Entry 2 -->
+        <div class="cart-item-row wish-entry-p2">
+          <img src="images/product_2.jpg" alt="LA E15412" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Lenskart Air LA E15412</h4>
+              <span class="item-spec">Gunmetal Matte &#8226; Ultra-light</span>
+            </div>
+            <div class="price-line">&#8377;2,000 <del>&#8377;4,000</del></div>
+            <div class="wish-actions-row">
+              <label for="cart-p2" class="btn-wish-move-cart clickable">+ Move to Cart</label>
+              <label for="fav-p2" class="btn-remove-cart clickable" title="Remove from wishlist">
+                <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                <span>Remove</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wish Entry 3 -->
+        <div class="cart-item-row wish-entry-p3">
+          <img src="images/product_3.jpg" alt="VC E14981" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Vincent Chase Chic Cat-Eye</h4>
+              <span class="item-spec">Rose Gold Rimless &#8226; Women</span>
+            </div>
+            <div class="price-line">&#8377;1,500 <del>&#8377;3,000</del></div>
+            <div class="wish-actions-row">
+              <label for="cart-p3" class="btn-wish-move-cart clickable">+ Move to Cart</label>
+              <label for="fav-p3" class="btn-remove-cart clickable" title="Remove from wishlist">
+                <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                <span>Remove</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wish Entry 4 -->
+        <div class="cart-item-row wish-entry-p4">
+          <img src="images/product_4.jpg" alt="JJ E10234" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>John Jacobs Rich Acetate</h4>
+              <span class="item-spec">Amber Geometric &#8226; Luxury</span>
+            </div>
+            <div class="price-line">&#8377;2,500 <del>&#8377;5,000</del></div>
+            <div class="wish-actions-row">
+              <label for="cart-p4" class="btn-wish-move-cart clickable">+ Move to Cart</label>
+              <label for="fav-p4" class="btn-remove-cart clickable" title="Remove from wishlist">
+                <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                <span>Remove</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wish Entry 5 -->
+        <div class="cart-item-row wish-entry-p5">
+          <img src="images/product_9.jpg" alt="Hooper Spider-Man" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Hooper Marvel Spider-Man</h4>
+              <span class="item-spec">Red &amp; Blue TR90 &#8226; Kids</span>
+            </div>
+            <div class="price-line">&#8377;1,100 <del>&#8377;2,200</del></div>
+            <div class="wish-actions-row">
+              <label for="cart-p5" class="btn-wish-move-cart clickable">+ Move to Cart</label>
+              <label for="fav-p5" class="btn-remove-cart clickable" title="Remove from wishlist">
+                <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                <span>Remove</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wish Entry 6 -->
+        <div class="cart-item-row wish-entry-p6">
+          <img src="images/product_6.jpg" alt="VC Polarized Pilot" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Vincent Chase Polarized Pilot</h4>
+              <span class="item-spec">Gunmetal &#8226; Green UV400</span>
+            </div>
+            <div class="price-line">&#8377;1,600 <del>&#8377;3,200</del></div>
+            <div class="wish-actions-row">
+              <label for="cart-p6" class="btn-wish-move-cart clickable">+ Move to Cart</label>
+              <label for="fav-p6" class="btn-remove-cart clickable" title="Remove from wishlist">
+                <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                <span>Remove</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wish Entry 7 -->
+        <div class="cart-item-row wish-entry-p7">
+          <img src="images/product_7.jpg" alt="Hustlr BLU" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Hustlr BLU Anti-Fatigue</h4>
+              <span class="item-spec">Matte Black &#8226; Zero Power BLU</span>
+            </div>
+            <div class="price-line">&#8377;1,300 <del>&#8377;2,600</del></div>
+            <div class="wish-actions-row">
+              <label for="cart-p7" class="btn-wish-move-cart clickable">+ Move to Cart</label>
+              <label for="fav-p7" class="btn-remove-cart clickable" title="Remove from wishlist">
+                <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                <span>Remove</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wish Entry 8 -->
+        <div class="cart-item-row wish-entry-p8">
+          <img src="images/product_15.jpg" alt="Aqualens 24H Daily" class="cart-thumb-img">
+          <div class="cart-item-details">
+            <div class="cart-brand-title">
+              <h4>Aqualens 24H Daily</h4>
+              <span class="item-spec">Pack of 30 &#8226; Hydrogel Lenses</span>
+            </div>
+            <div class="price-line">&#8377;1,299 <del>&#8377;1,800</del></div>
+            <div class="wish-actions-row">
+              <label for="cart-p8" class="btn-wish-move-cart clickable">+ Move to Cart</label>
+              <label for="fav-p8" class="btn-remove-cart clickable" title="Remove from wishlist">
+                <svg viewBox="0 0 24 24" class="trash-icon"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                <span>Remove</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+
+  <!-- ================= PURE CSS MODAL: BOOK HOME EYE TEST ================= -->
+  <div class="hometest-modal-backdrop">
+    <label for="hometest-modal-toggle" class="hometest-outside-closer"></label>
+    <div class="hometest-modal-dialog">
+      <label for="hometest-modal-toggle" class="modal-close-btn clickable">&times;</label>
+      <div class="ht-modal-header">
+        <span class="ht-badge">CLINIC AT YOUR HOME</span>
+        <h3>Book Free Home Eye Test @ ₹99</h3>
+        <p>12-step eye test with 100+ frames to try at home</p>
+      </div>
+      <form class="ht-modal-form" action="#" onsubmit="return false;">
+        <div class="form-group">
+          <label>Your Full Name</label>
+          <input type="text" placeholder="e.g. Sahil Sharma" class="auth-input" required>
+        </div>
+        <div class="form-group">
+          <label>Mobile Number</label>
+          <input type="tel" placeholder="10-digit mobile number" class="auth-input" required>
+        </div>
+        <div class="form-group">
+          <label>Pincode &amp; Delivery Address</label>
+          <input type="text" placeholder="Enter your home address & pin code" class="auth-input" required>
+        </div>
+        <div class="form-group">
+          <label>Preferred Time Slot</label>
+          <div class="slot-selector-grid">
+            <span class="slot-pill active">10 AM - 12 PM</span>
+            <span class="slot-pill">12 PM - 2 PM</span>
+            <span class="slot-pill">2 PM - 4 PM</span>
+            <span class="slot-pill">4 PM - 6 PM</span>
+          </div>
+        </div>
+        <button type="submit" class="ht-confirm-btn">Confirm Appointment for ₹99 &rarr;</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
